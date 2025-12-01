@@ -1,0 +1,267 @@
+body{
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: skyblue;
+}
+header{
+    background: #0f172a;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.9rem;
+    font-weight: bold;
+    initial-letter: 1px;
+    color: rgb(187, 197, 207);
+}
+nav{
+    background: #1e293b;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    gap: 2rem;
+    color: rgb(203, 210, 216);
+}
+nav a{
+    color: rgb(199, 209, 218);
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+nav a:hover{
+    color: #22c55e;
+}
+.hero{
+    background: url('hero.jpg') center/cover no repeat;
+    height: 55vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(1, 15, 15);
+    padding: 2rem;
+}
+.hero h1{
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 15px black;
+    animation: fadeIn 5s;
+}
+@keyframes fadeIn{
+    from{opacity:0;}
+    to {opacity:1;}
+}
+section{
+    padding: 2rem;
+}
+
+.team{
+  display: flex;
+  gap: 1rem;
+  justify-content:center;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+}
+
+.employee-card img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+  transition: .4s;
+}
+
+.employee-card img:hover {
+  transform: scale(1.08);
+}
+.employee-card{
+    width: 200px;
+    background: #509dca;
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(rgb(121, 97, 97), green, blue, alpha)
+}
+.page{
+    display: none;
+}
+.page .active{
+    display: block;
+}
+.products-row {
+    display: flex;
+    gap: 20px; /* space between the products */
+    justify-content: center; /* center them horizontally */
+}
+.products-row {
+    display: flex;
+    gap: 20px; 
+    justify-content: center; 
+    flex-wrap: wrap; /* stops overlapping */
+}
+
+.product-card {
+    width: 200px;
+    background: #509dca;
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+.product-card img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card:hover {
+    transform: scale(1.08);
+}
+.card{
+    text-align: center;
+}
+.contact {
+    background: #e6f4ff;
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.lock {
+   .lock {
+    max-width: 350px;   /* smaller size */
+    width: 100%;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.18);
+}
+
+}
+
+.lock h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 30px;
+    color: #333;
+    font-weight: 700;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Input field container */
+.input-box {
+    position: relative;
+}
+
+.input-box .icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    pointer-events: none;
+}
+
+/* Input + textarea styling */
+.input-box input,
+.input-box textarea {
+    width: 80%;
+    padding: 1rem 1rem 1rem 45px;
+    border: 2px solid #509dca;
+    border-radius: 12px;
+    font-size: 16px;
+    background: #f3faff;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-box textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Floating labels */
+.input-box label {
+    position: absolute;
+    left: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+/* When typing */
+.input-box input:focus,
+.input-box textarea:focus {
+    border-color: #1a75b8;
+    box-shadow: 0 0 10px rgba(80, 157, 202, 0.4);
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label,
+.input-box textarea:focus ~ label,
+.input-box textarea:valid ~ label {
+    top: -8px;
+    font-size: 13px;
+    background: #fff;
+    padding: 0 5px;
+    color: #1a75b8;
+}
+
+/* Submit button */
+.contact-form button {
+    padding: 1rem;
+    background: #509dca;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background: #1a75b8;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.footer{
+    background-color: #0f172a;
+}
+footer {
+    background: #509dca;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
+    border-radius: 20px 20px 0 0;
+}
+
+footer p {
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #000;
+    transform: scale(1.2);
+}
