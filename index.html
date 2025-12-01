@@ -133,6 +133,8 @@
     </form>
   </div>
 </section>
+<!-- Back to Top Button -->
+<button id="backToTop" title="Back to Top">↑</button>
 
 
   <!-- FLOATING WHATSAPP BUTTON -->
@@ -140,6 +142,28 @@
 
   <!-- FOOTER -->
   <footer>
+    <script>
+// Get the button
+let backToTopBtn = document.getElementById("backToTop");
+
+// Show button when user scrolls down 100px
+window.onscroll = function() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+};
+
+// Scroll smoothly to top when clicked
+backToTopBtn.addEventListener("click", function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+</script>
+
     <p>© 2025 Dantatu Aluminium & Glass Accessories. All rights reserved.</p>
   <footer>
     <div class="social-links">
@@ -151,6 +175,7 @@
 
 
 
-  </footer>
+  
 </body>
+
 </html>
